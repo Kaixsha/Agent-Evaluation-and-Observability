@@ -1,0 +1,9 @@
+{
+  "policy_id": "POL-004",
+  "policy_type": "auto",
+  "holder_name": "Alex Chen",
+  "premium_amount": 1425.0,
+  "confidence": 0.97,
+  "disagreement_detected": false,
+  "retry_demo": true
+}
