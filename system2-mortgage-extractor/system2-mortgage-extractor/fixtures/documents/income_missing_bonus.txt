@@ -1,0 +1,6 @@
+INCOME STATEMENT
+
+Employee: Sample Borrower
+Base salary: $60000
+Overtime: $5000
+Stated total: $65000

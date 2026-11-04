@@ -30,7 +30,8 @@ def replay_extract(source: str, attempt: int) -> dict[str, Any]:
     return data
 
 
-def find_documents(directory: Path) -> list"""Return policy fixture files in deterministic order."""
+def find_documents(directory: Path) -> list[str]:
+    """Return policy fixture files in deterministic order."""
 
     return [
         str(path)

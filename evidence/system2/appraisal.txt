@@ -1,0 +1,18 @@
+MORTGAGE DOCUMENT EXTRACTION
+==================================================
+document: fixtures/documents/appraisal_informal_sqft.txt
+mode: replay
+document_type: appraisal
+
+STRUCTURED EXTRACTION
+{
+  "document_type": "appraisal",
+  "square_feet": 2400,
+  "base_salary": null,
+  "overtime": null,
+  "bonus": null,
+  "stated_total": null
+}
+
+CONSISTENCY VALIDATION
+Arithmetic consistency check is not applicable.

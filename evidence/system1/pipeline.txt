@@ -1,0 +1,32 @@
+POLICY EXTRACTION PIPELINE
+==================================================
+source: data/policies/policy_auto.json
+attempts: 1
+validation_passed: True
+routing: auto_approve
+signal: all_safeguards_passed
+--------------------------------------------------
+source: data/policies/policy_human_review.json
+attempts: 1
+validation_passed: True
+routing: human_review
+signal: independent_extractor_disagreement
+--------------------------------------------------
+source: data/policies/policy_retry.json
+attempts: 2
+validation_passed: True
+routing: auto_approve
+signal: all_safeguards_passed
+--------------------------------------------------
+source: data/policies/policy_spot_check.json
+attempts: 1
+validation_passed: True
+routing: spot_check
+signal: confidence_below_0.95
+--------------------------------------------------
+ROUTING COUNTS
+auto_approve: 2
+human_review: 1
+spot_check: 1
+
+Routing decisions written to: ../evidence/system1/routing_decisions.json

@@ -1,0 +1,46 @@
+=== NORMAL RUN ===
+SUPPLY-CHAIN RISK INVESTIGATION
+==================================================
+target: meridian
+offline: True
+simulate_timeout: False
+
+## Well-Established
+### Current logistics conditions
+Available operational sources provide attributable evidence about current capacity and port conditions.
+- warehouse_capacity: 92% [Source: Meridian Capacity Report; Date: 2026-04-30]
+- port_disruption: No major disruption reported [Source: Regional Port Status Feed; Date: 2026-05-01]
+## Contested
+### On-time-delivery performance
+Sources report materially different delivery metrics. Both values are retained with source and date rather than being merged into a single unsupported estimate.
+- on_time_delivery: 95% [Source: Meridian Operations Report; Date: 2026-03-31]
+- on_time_delivery: 78% [Source: Independent Logistics Audit; Date: 2026-04-15]
+## Incomplete
+### Remaining evidence gaps
+No supplier-level evidence was available to independently validate every operational claim.
+- No attributable source claim available.
+
+Briefing written to: meridian_briefing.md
+
+=== SOURCE-FAILURE PERTURBATION ===
+SUPPLY-CHAIN RISK INVESTIGATION
+==================================================
+target: meridian
+offline: True
+simulate_timeout: True
+
+## Well-Established
+### Current logistics conditions
+Available operational sources provide attributable evidence about current capacity and port conditions.
+- warehouse_capacity: 92% [Source: Meridian Capacity Report; Date: 2026-04-30]
+## Contested
+### On-time-delivery performance
+Sources report materially different delivery metrics. Both values are retained with source and date rather than being merged into a single unsupported estimate.
+- on_time_delivery: 95% [Source: Meridian Operations Report; Date: 2026-03-31]
+- on_time_delivery: 78% [Source: Independent Logistics Audit; Date: 2026-04-15]
+## Incomplete
+### Unavailable source evidence
+The investigation completed despite source failure. Unavailable evidence is explicitly marked incomplete.
+- port_disruption: source unavailable: simulated timeout [Source: Regional Port Status Feed; Date: 2026-05-01]
+
+Briefing written to: meridian_briefing.md

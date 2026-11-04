@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.2, pytest-9.2.0, pluggy-1.7.0 -- /workspaces/Agent-Evaluation-and-Observability/system3-supply-chain-risk/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /workspaces/Agent-Evaluation-and-Observability/system3-supply-chain-risk
+configfile: pyproject.toml
+collecting ... collected 6 items
+
+tests/test_investigation.py::test_normal_run_has_all_three_sections PASSED [ 16%]
+tests/test_investigation.py::test_conflicting_delivery_values_are_both_retained PASSED [ 33%]
+tests/test_investigation.py::test_delivery_conflict_is_classified_as_contested PASSED [ 50%]
+tests/test_investigation.py::test_source_timeout_does_not_abort_run PASSED [ 66%]
+tests/test_investigation.py::test_timeout_source_is_marked_unavailable PASSED [ 83%]
+tests/test_investigation.py::test_provenance_is_preserved_in_briefing PASSED [100%]
+
+============================== 6 passed in 0.03s ===============================

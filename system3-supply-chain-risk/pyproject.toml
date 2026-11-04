@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supply-chain-risk"
+version = "0.1.0"
+description = "Provenance-preserving multi-source supply-chain synthesis"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "mypy>=1.10",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+supply-chain-investigate = "supply_chain_risk.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["supply_chain_risk*"]
+exclude = ["tests*", "fixtures*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

@@ -1,0 +1,6 @@
+PROPERTY APPRAISAL
+
+Property address: 100 Example Street
+Property type: Single-family residence
+Living area: about 2,400 sq ft
+Condition: Good

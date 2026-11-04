@@ -1,0 +1,13 @@
+## Well-Established
+### Current logistics conditions
+Available operational sources provide attributable evidence about current capacity and port conditions.
+- warehouse_capacity: 92% [Source: Meridian Capacity Report; Date: 2026-04-30]
+## Contested
+### On-time-delivery performance
+Sources report materially different delivery metrics. Both values are retained with source and date rather than being merged into a single unsupported estimate.
+- on_time_delivery: 95% [Source: Meridian Operations Report; Date: 2026-03-31]
+- on_time_delivery: 78% [Source: Independent Logistics Audit; Date: 2026-04-15]
+## Incomplete
+### Unavailable source evidence
+The investigation completed despite source failure. Unavailable evidence is explicitly marked incomplete.
+- port_disruption: source unavailable: simulated timeout [Source: Regional Port Status Feed; Date: 2026-05-01]

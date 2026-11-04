@@ -33,3 +33,7 @@ target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
+
+[tool.setuptools.packages.find]
+include = ["policy_extractor*"]
+exclude = ["tests*", "data*"]

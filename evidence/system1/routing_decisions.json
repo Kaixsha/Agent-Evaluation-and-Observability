@@ -1,0 +1,79 @@
+[
+  {
+    "source": "data/policies/policy_auto.json",
+    "extracted_data": {
+      "policy_id": "POL-001",
+      "policy_type": "auto",
+      "holder_name": "Jordan Lee",
+      "premium_amount": 1250.0,
+      "confidence": 0.98,
+      "disagreement_detected": false
+    },
+    "validation": {
+      "valid": true,
+      "missing_fields": [],
+      "errors": []
+    },
+    "routing_decision": "auto_approve",
+    "routing_signal": "all_safeguards_passed",
+    "extraction_attempts": 1
+  },
+  {
+    "source": "data/policies/policy_human_review.json",
+    "extracted_data": {
+      "policy_id": "POL-003",
+      "policy_type": "umbrella",
+      "holder_name": "Casey Rivera",
+      "premium_amount": 950.0,
+      "confidence": 0.99,
+      "disagreement_detected": true
+    },
+    "validation": {
+      "valid": true,
+      "missing_fields": [],
+      "errors": []
+    },
+    "routing_decision": "human_review",
+    "routing_signal": "independent_extractor_disagreement",
+    "extraction_attempts": 1
+  },
+  {
+    "source": "data/policies/policy_retry.json",
+    "extracted_data": {
+      "policy_id": "POL-004",
+      "policy_type": "auto",
+      "holder_name": "Alex Chen",
+      "premium_amount": 1425.0,
+      "confidence": 0.97,
+      "disagreement_detected": false,
+      "retry_demo": true
+    },
+    "validation": {
+      "valid": true,
+      "missing_fields": [],
+      "errors": []
+    },
+    "routing_decision": "auto_approve",
+    "routing_signal": "all_safeguards_passed",
+    "extraction_attempts": 2
+  },
+  {
+    "source": "data/policies/policy_spot_check.json",
+    "extracted_data": {
+      "policy_id": "POL-002",
+      "policy_type": "home",
+      "holder_name": "Taylor Morgan",
+      "premium_amount": 1800.0,
+      "confidence": 0.9,
+      "disagreement_detected": false
+    },
+    "validation": {
+      "valid": true,
+      "missing_fields": [],
+      "errors": []
+    },
+    "routing_decision": "spot_check",
+    "routing_signal": "confidence_below_0.95",
+    "extraction_attempts": 1
+  }
+]

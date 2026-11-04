@@ -5,7 +5,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
-
 REQUIRED_FIELDS = (
     "policy_id",
     "policy_type",
