@@ -1,0 +1,8 @@
+{
+  "policy_id": "POL-002",
+  "policy_type": "home",
+  "holder_name": "Taylor Morgan",
+  "premium_amount": 1800.0,
+  "confidence": 0.90,
+  "disagreement_detected": false
+}
