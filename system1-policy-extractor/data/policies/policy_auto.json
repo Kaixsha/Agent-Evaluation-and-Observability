@@ -1,0 +1,8 @@
+{
+  "policy_id": "POL-001",
+  "policy_type": "auto",
+  "holder_name": "Jordan Lee",
+  "premium_amount": 1250.0,
+  "confidence": 0.98,
+  "disagreement_detected": false
+}
