@@ -1,0 +1,8 @@
+{
+  "policy_id": "POL-003",
+  "policy_type": "umbrella",
+  "holder_name": "Casey Rivera",
+  "premium_amount": 950.0,
+  "confidence": 0.99,
+  "disagreement_detected": true
+}
